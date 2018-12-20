@@ -1,0 +1,13 @@
+adb push libdownmix.so /sdcard/
+adb push libaudioflinger.so /sdcard/
+
+adb root
+adb remount
+adb shell
+
+# cp /sdcard/libaudioflinger.so /system/lib/
+# chmod 644 /system/lib/libaudioflinger.so
+# cp /sdcard/libdownmix.so /vendor/lib/soundfx/
+# chmod 644 /vendor/lib/soundfx/libdownmix.so
+# reboot
+
